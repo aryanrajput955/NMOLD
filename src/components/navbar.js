@@ -1,66 +1,195 @@
-import React, { useState } from "react";
-
+import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [showSearch, setShowSearch] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false); // For mobile menu
-
+  const [service, setService] = useState(true);
+  const [service2, setService2] = useState(true);
+  const [automation, setAutomation] = useState(true);
+  const [consulting, setConsulting] = useState(true);
   return (
     <div>
-      <nav className="flex items-center justify-between w-full px-6 py-4 bg-white text-black">
-        {/* Logo */}
-        <div className="text-2xl font-body font-light lg:flex lg:items-center">
-          NMOLD
-        </div>
+      <nav className=" flex justify-center items-center w-full gap-32 pt-3">
+        {/* left side */}
 
-        {/* Navigation Links (Hidden on small screens) */}
-        <ul className="hidden lg:flex gap-10 font-jost text-lg">
-          <li className="cursor-pointer hover:text-gray-400">Home</li>
-          <li className="cursor-pointer hover:text-gray-400">Projects</li>
-          <li className="cursor-pointer hover:text-gray-400">Services</li>
-          <li className="cursor-pointer hover:text-gray-400">Contact Us</li>
+        <div className=" text-2xl font-body  font-light">NMOLD</div>
+
+        {/* middle part */}
+        <ul className=" text-lg flex ml-36 gap-20 font-jost ">
+          <Link to={"/"}>
+            <li>Home</li>
+          </Link>
+
+          <Link to={"/projects"}>
+            <li>Projects</li>
+          </Link>
+          <div
+            className="flex justify-center items-center "
+            onMouseEnter={() => setService(!service)}
+            onMouseLeave={() => setService(false)}
+          >
+            <p className="cursor-pointer">Services</p>
+            <img
+              onMouseEnter={() => setService(!service)}
+              onMouseLeave={() => setService(false)}
+              className={`${
+                service
+                  ? "cursor-pointer aspect-square h-4 ml-3"
+                  : "cursor-pointer aspect-square h-4 ml-3 -rotate-90 transition-all ease-linear ]"
+              }`}
+              src="./dropdown_arrow.png "
+              alt="downarrow"
+            />
+          </div>
+          <Link to={"/contact"}>
+            <li>Contact Us</li>
+          </Link>
         </ul>
-
-        {/* Search and Hamburger Menu */}
-        <div className="flex items-center gap-6">
-          {/* Search Bar */}
-          <div className="relative hidden lg:block">
+        <div className=" ml-96">
+          <div className=" relative flex items-center">
+            {/* Search Bar */}
             {showSearch && (
               <input
                 type="text"
                 placeholder="Search here"
-                className="absolute right-12 p-2 bg-white text-gray-900 rounded-xl border border-gray-900 focus:outline-none transition-all duration-300 w-[200px]"
+                className="absolute right-12 p-2 bottom-2  bg-white text-gray-900 rounded-xl border border-gray-900 focus:outline-none transition-all duration-500"
+                style={{ width: "200px" }}
               />
             )}
-            <button onClick={() => setShowSearch((prev) => !prev)}>
+
+            {/* Search Button */}
+            <button
+              className="focus:outline-none"
+              onClick={() => setShowSearch((prev) => !prev)}
+            >
               <img
-                className="h-7"
+                className="h-11 pb-4 "
                 src="./SEARCH.png"
-                alt="search icon"
+                alt=" searchicon"
               />
             </button>
           </div>
-
-          {/* Hamburger Menu (Visible on small screens) */}
-          <button
-            className="lg:hidden block focus:outline-none"
-            onClick={() => setMenuOpen((prev) => !prev)}
-          >
-            <div className="h-1 w-6 bg-white mb-1"></div>
-            <div className="h-1 w-6 bg-white mb-1"></div>
-            <div className="h-1 w-6 bg-white"></div>
-          </button>
         </div>
       </nav>
-
-      {/* Mobile Dropdown Menu */}
-      {menuOpen && (
-        <ul className="bg-gray-800 text-white font-jost text-lg flex flex-col items-start px-6 py-4 lg:hidden">
-          <li className="cursor-pointer py-2 hover:text-gray-400">Home</li>
-          <li className="cursor-pointer py-2 hover:text-gray-400">Projects</li>
-          <li className="cursor-pointer py-2 hover:text-gray-400">Services</li>
-          <li className="cursor-pointer py-2 hover:text-gray-400">Contact Us</li>
-        </ul>
-      )}
+      {/* Service dropdown */}
+      <div
+        className={`${
+          service
+            ? "transition-all ease-linear h-0 overflow-hidden"
+            : `z-[10000] h-auto transition-all ease-linear bg-[#1f1f1f] text-white w-[15rem] flex flex-col justify-center absolute top-14 left-[37rem]`
+        }`}
+        onMouseEnter={() => {
+          setService(false);
+        }}
+        onMouseLeave={() => {
+          setService(true);
+        }}
+      >
+        <p
+          onMouseEnter={() => setAutomation(!automation)}
+          onMouseLeave={() => setAutomation(true)}
+          className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]"
+        >
+          Automation
+        </p>
+        <Link to={"./consulting"}>
+        <p
+          onMouseEnter={() => setConsulting(!consulting)}
+          onMouseLeave={() => setConsulting(true)}
+          className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]"
+          >
+          Consulting
+        </p>
+          </Link>
+        <p
+          onMouseEnter={() => setService2(!service2)}
+          onMouseLeave={() => setService2(true)}
+          className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]"
+        >
+          Engineering
+        </p>
+        <Link to={"/lighting"}>
+        <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]"
+        >
+          Lighting
+        </p>
+          </Link>
+      </div>
+     
+      {/* Engineering Dropdown */}
+      <div
+        onMouseEnter={() => {
+          setService(false);
+          setService2(false);
+        }}
+        onMouseLeave={() => {
+          setService(true);
+          setService2(true);
+        }}
+        className={`${
+          service2
+            ? "hidden"
+            : `z-[10000] h-auto transition-all ease-linear bg-[#1f1f1f] text-white w-[15rem] flex flex-col justify-center absolute top-[150px] left-[52rem]`
+        }`}
+      >
+        <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]">
+          PCC Panels
+        </p>
+        <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]">
+          MCC panels
+        </p>
+        <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]">
+          MCC panels
+        </p>
+      </div>
+      {/*Automation Dropdown */}
+      <div
+        onMouseEnter={() => {
+          setService(false);
+          setAutomation(false);
+        }}
+        onMouseLeave={() => {
+          setService(true);
+          setAutomation(true);
+        }}
+        className={`${
+          automation
+            ? "hidden"
+            : `z-[10000] h-auto transition-all ease-linear bg-[#1f1f1f] text-white w-[15rem] flex flex-col justify-center absolute top-[56px] left-[52rem]`
+        }`}
+      >
+        <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]">
+          Industrial Automation
+        </p>
+        <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]">
+          Home Automation
+        </p>
+      </div>
+      {/* Consulting Dropdown */}
+      <div
+        onMouseEnter={() => {
+          setService(false);
+          setConsulting(false);
+        }}
+        onMouseLeave={() => {
+          setService(true);
+          setConsulting(true);
+        }}
+        className={`${
+          consulting
+            ? "hidden"
+            : `z-[10000] h-auto transition-all ease-linear bg-[#1f1f1f] text-white w-[15rem] flex flex-col justify-center absolute top-[103px] left-[52rem]`
+        }`}
+      >
+        <Link to={"/energy-consulting"}>
+        <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]">
+        Energy Consulting & Auditing
+        </p>
+        </Link>
+        <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]">
+        Electrical Consulting & Projects
+        </p>
+      </div>
     </div>
   );
 };
