@@ -31,7 +31,7 @@ const Reviews = () => {
         <div className="flex justify-center lg:justify-end items-center lg:pr-20 gap-4 mb-6">
           <img
             alt="Previous Review"
-            className=" rounded-t-full hover:bg-yellow-700 w-12 lg:w-14 cursor-pointer -rotate-90 transition-all duration-300 ease-in-out"
+            className=" rounded-t-full hover:scale-110 w-12 lg:w-14 cursor-pointer -rotate-90 transition-all duration-300 ease-in-out"
             src="./Comment_arrow.png"
             onClick={() => {
               if (review.one) {
@@ -45,7 +45,7 @@ const Reviews = () => {
           />
           <img
             alt="Next Review"
-            className=" rounded-t-full hover:bg-yellow-700 w-12 lg:w-14 cursor-pointer rotate-90 transition-all duration-300 ease-in-out"
+            className=" rounded-t-full hover:scale-110 w-12 lg:w-14 cursor-pointer rotate-90 transition-all duration-300 ease-in-out"
             src="./Comment_arrow.png"
             onClick={() => {
               if (review.one) {

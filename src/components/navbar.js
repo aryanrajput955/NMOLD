@@ -92,7 +92,7 @@ const Navbar = () => {
         >
           Automation
         </p>
-        <Link to={"./consulting"}>
+        <Link to={"/consulting"}>
         <p
           onMouseEnter={() => setConsulting(!consulting)}
           onMouseLeave={() => setConsulting(true)}
@@ -186,9 +186,11 @@ const Navbar = () => {
         Energy Consulting & Auditing
         </p>
         </Link>
+        <Link to={"/electrical-consulting"}>
         <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]">
         Electrical Consulting & Projects
         </p>
+        </Link>
       </div>
     </div>
   );

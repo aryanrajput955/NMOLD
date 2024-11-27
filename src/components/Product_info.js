@@ -73,7 +73,7 @@ const Product_info = () => {
 					</p>
 				</div>
 			</div>
-			<div data-aos="zoom-in-down" data-aos-offset="400"   data-aos-once="true"  data-aos-delay="100"  className='flex flex-col items-center mt-20 '>
+			<div data-aos="zoom-in-down" data-aos-offset="200"   data-aos-once="true"  data-aos-delay="100"  className='flex flex-col items-center mt-20 '>
 				<h1 className='jost text-[40px] font-semibold'>Related Products</h1>
 				<div className='mb-32 flex gap-20 mt-10'>
 					<Related_products />

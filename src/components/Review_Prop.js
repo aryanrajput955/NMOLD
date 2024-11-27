@@ -6,17 +6,17 @@ import star from '../images/rating.png';
 
 const Review_Prop = ({ desc }) => {
   return (
-    <div className="bg-[#1f1f1f] rounded-3xl flex flex-col px-6 sm:px-10 pt-6 sm:pt-10 h-auto w-full sm:w-[580px]">
+    <div className="bg-[#1f1f1f] rounded-3xl flex flex-col px-6 sm:px-10 py-7">
       {/* Top Image */}
       <img
         alt="Colon Icon"
-        src={img1}
+      src={img1}
         className="aspect-square w-14 sm:w-20 mx-auto sm:mx-0"
       />
 
       {/* Description Section */}
       <div className="pl-0 sm:pl-9 mt-4">
-        <p className="text-[#e5e5e5] font-jost font-medium text-sm sm:text-base text-center sm:text-left w-full sm:w-[390px]">
+        <p className="text-[#e5e5e5] h-28 font-jost font-medium text-sm sm:text-base text-center sm:text-left w-full sm:w-[390px]">
           {desc}
         </p>
 

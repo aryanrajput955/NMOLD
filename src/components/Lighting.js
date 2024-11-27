@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 import search_img from '../images/search.png'
 import Wall_Washer_Series from './Wall_Washer_Series'
 import Flood_Light_Series from './Flood_Light_Series'
+import Underwater_Light_Series from './Underwater_Light_Series'
+import Underground_Series from './Underground_Series'
+import Tree_Light_Series from './Tree_Light_Services'
 
 const Lighting = () => {
 	return (
@@ -54,7 +57,9 @@ const Lighting = () => {
 					<div>
 						<Wall_Washer_Series />
 						<Flood_Light_Series />
-						<Flood_Light_Series />
+						<Underwater_Light_Series/>
+						<Underground_Series/>
+						<Tree_Light_Series/>
 					</div>
 				</div>
 			</div>
