@@ -7,7 +7,17 @@ export default withMT({
       jost:["Jost"],
       josefin:["Josefin Sans","sans-serif"]
     },
-    extend: {},
+    extend: {
+      animation: {
+        blink: 'blink 2s infinite', // Define the animation name and duration
+      },
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: 1 }, // Fully visible
+          '50%': { opacity: 0 }, // Invisible
+        },
+      },
+    },
   },
   plugins: [],
 });

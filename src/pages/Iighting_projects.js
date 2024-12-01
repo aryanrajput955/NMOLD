@@ -22,7 +22,7 @@ const LightingProjects = () => {
 </h2>
 
 
-   <div data-aos="fade-up" data-aos-delay="500" class=" pt-4    grid grid-cols-2 gap-4 md:grid-cols-4 bg-neutral-800">
+   <div data-aos="fade-up" data-aos-delay="500" class=" pt-4 pb-2    grid grid-cols-2 gap-4 md:grid-cols-4 bg-neutral-800">
   <div class="grid gap-4">
     <div>
       <img

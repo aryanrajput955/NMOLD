@@ -11,15 +11,25 @@ import { Autoplay, Pagination } from "swiper/modules";
 const Hero = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row w-screen">
-        {/* Left side */}
-        <div
-          className="lg:w-1/2 w-full bg-gray-900 relative flex flex-col items-start p-6 sm:p-8 lg:p-10"
-        >
-          {/* Circle 1 positioned at the right edge */}
-          <div className="hidden lg:block absolute top-10 right-0 w-10 h-20 md:w-14 md:h-28 lg:w-16 lg:h-32 rounded-tl-full rounded-bl-full bg-neutral-600 z-0"></div>
-
-          <div className="flex items-start w-full">
+        <div className=" w-full">
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Autoplay, Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className=" flex ">
+              <div className="lg:w-1/2 w-full bg-gray-900 relative flex flex-col items-start p-6 sm:p-8 lg:p-10">
+              <div className="hidden lg:block absolute top-10 right-0 w-10 h-20 md:w-14 md:h-28 lg:w-16 lg:h-32 rounded-tl-full rounded-bl-full bg-neutral-600 z-0"></div>
+              <div className="flex items-start w-full">
             <h1 className="text-white font-light  text-4xl sm:text-5xl md:text-7xl lg:text-9xl mb-5">
               NMOLD
             </h1>
@@ -40,51 +50,39 @@ const Hero = () => {
               </span>
             </button>
           </div>
-
-          {/* Circle 2 positioned at the left edge */}
           <div className="hidden lg:block absolute bottom-3 left-0 w-10 h-20 md:w-14 md:h-28 lg:w-16 lg:h-32 rounded-tr-full rounded-br-full bg-gray-600"></div>
-        </div>
-
-        {/* Right side */}
-        <div className="lg:w-1/2 w-full">
-          <Swiper
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Autoplay, Pagination]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
+          <div className="hidden lg:block absolute bottom-20 rotate-180  right-0 w-10 h-20 md:w-14 md:h-28 lg:w-16 lg:h-32 rounded-tr-full rounded-br-full bg-gray-600"></div>
+              </div>
+              <div className=" w-1/2">
               <img
-                className="h-[200px] sm:h-[300px] md:h-[500px] lg:h-[750px] w-full object-cover"
+                className="h-screen w-full object-cover"
                 src="./image2.png"
                 alt="Slide 1"
-              />
+                />
+              </div>
+                </div>
+           
             </SwiperSlide>
             <SwiperSlide>
+              {/* <h1 className=" absolute text-gray-600 text-7xl font-josefin top-10 left-[500PX] blur-sm ">OUR PROJECTS</h1>
+              <h1 className=" absolute text-white text-7xl font-josefin top-10 left-[500PX]  ">OUR PROJECTS</h1> */}
               <img
-                className="h-[200px] sm:h-[300px] md:h-[500px] lg:h-[750px] w-full object-cover"
-                src="./image1.png"
+                className=" h-screen w-full object-cover"
+                src="./lg9.png"
                 alt="Slide 2"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
                 className="h-[200px] sm:h-[300px] md:h-[500px] lg:h-[750px] w-full object-cover"
-                src="./image3.png"
+                src="./lg12.png"
                 alt="Slide 3"
               />
             </SwiperSlide>
           </Swiper>
         </div>
       </div>
-    </div>
+    
   );
 };
 

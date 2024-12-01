@@ -13,6 +13,8 @@ import Energy_consulting from "./pages/Energy_consulting";
 import Product_info from "./components/Product_info";
 import Lighting from "./components/Lighting";
 import Electrical_consulting from "./pages/Electrical_consulting";
+import Industrial_automation from "./pages/industrial_automation";
+import Automation from "./pages/Automation";
 
 
 AOS.init();
@@ -54,6 +56,14 @@ const App = () => {
     {
       path:"/electrical-consulting",
       element:<><Navbar/><Electrical_consulting/></>
+    },
+    {
+      path:"/industrial-automation",
+      element:<><Navbar/><Industrial_automation/></>
+    },
+    {
+      path:"/automation",
+      element:<><Navbar/><Automation/></>
     }
   ])
 
