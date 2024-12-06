@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.besley {
+	font-family: 'Besley', serif;
+	font-optical-sizing: auto;
+}
+
+.josefin {
+	font-family: 'Josefin Sans', sans-serif;
+	font-optical-sizing: auto;
+}
+
+.jost {
+	font-family: 'Jost', sans-serif;
+	font-optical-sizing: auto;
+}
+
+.custom_blue {
+	color: #0088ff;
+}
+
+.custom_shadow{
+	box-shadow: 0 50px 60px -12px rgb(0 0 0 / 0.25)
+}
+
+.bg_ligting{
+	background-image: url('./images/lighting_bg.jpg');
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat;
+	width: 100%; 
+	height: 300px;
+}
