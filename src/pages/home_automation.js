@@ -109,8 +109,9 @@ const Home_automation = () => {
             </span>
             <h3 className="text-3xl font-bold">Lighting Automation</h3>
             <p className="my-6 dark:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              aliquam possimus quas, error esse quos.
+            Take control, individual control, scenes, fully automatic, or a simple switch beside
+the bed to make sure all the lights are off. Light up your environment the way that works for
+you, from changing colors ,color temperature to dimming and daytime autocontrol.
             </p>
             <button
               type="button"
@@ -134,8 +135,8 @@ const Home_automation = () => {
             </span>
             <h3 className="text-3xl font-bold">Blinds Automation</h3>
             <p className="my-6 dark:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              aliquam possimus quas, error esse quos.
+            Wake up to the blinds and shutters automatically letting in the sun. With automated
+            blinds, you’re in control, included in scenes, automatic, or individually on a keypad or app.
             </p>
             <button
               type="button"
@@ -159,8 +160,10 @@ const Home_automation = () => {
             </span>
             <h3 className="text-3xl font-bold">Heating,Ventilation and Air-Conditioning</h3>
             <p className="my-6 dark:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              aliquam possimus quas, error esse quos.
+            Set each room to a temperature that suits you.
+With demand-based control use your heating, cooling and ventilation in a way that gives you
+optimum comfort and efficiency. Set conditions or schedules for fully automated control of
+your HVAC system while saving energy.
             </p>
             <button
               type="button"
@@ -185,10 +188,10 @@ const Home_automation = () => {
                 <span className="text-xs uppercase dark:text-gray-600">
                   Give it a try now!
                 </span>
-                <h3 className="text-3xl font-bold">Smart Home Security</h3>
+                <h3 className="text-3xl font-bold">Multimedia</h3>
                 <p className="my-6 dark:text-gray-600">
-                  Protect your home with advanced smart security systems for
-                  peace of mind.
+                Multi-rooming in the entire house, TV and Music Systems and multimedia
+                components and home theatre are integrated for maximum ease and enjoyment.
                 </p>
                 <button
                   type="button"
@@ -210,10 +213,11 @@ const Home_automation = () => {
                 <span className="text-xs uppercase dark:text-gray-600">
                   Give it a try now!
                 </span>
-                <h3 className="text-3xl font-bold">Energy Monitoring</h3>
+                <h3 className="text-3xl font-bold">Security</h3>
                 <p className="my-6 dark:text-gray-600">
-                  Track and reduce energy usage with smart monitoring
-                  solutions.
+                Smart door locks that give easy access to friendly people while generate intrusion
+notification for unfamiliar people and record their clip. Smart VDP systems and Smart video
+surveillance and much more for a secure home and building.
                 </p>
                 <button
                   type="button"
@@ -235,10 +239,10 @@ const Home_automation = () => {
                 <span className="text-xs uppercase dark:text-gray-600">
                   Give it a try now!
                 </span>
-                <h3 className="text-3xl font-bold">Climate Control</h3>
+                <h3 className="text-3xl font-bold">Monitors and Alarms:</h3>
                 <p className="my-6 dark:text-gray-600">
-                  Automate your home's climate for ultimate comfort and energy
-                  savings.
+                Monitor your home and environment, CO2 levels, energy usage and
+                integrate your fire security system for complete peace of mind.
                 </p>
                 <button
                   type="button"
@@ -260,10 +264,10 @@ const Home_automation = () => {
                 <span className="text-xs uppercase dark:text-gray-600">
                   Give it a try now!
                 </span>
-                <h3 className="text-3xl font-bold">IoT Device Integration</h3>
+                <h3 className="text-3xl font-bold">Visualization and Remote</h3>
                 <p className="my-6 dark:text-gray-600">
-                  Seamlessly connect and control all your IoT devices in one
-                  place.
+                Personalize your spaces for better visualization and immersive
+                feel for easy remote operations.
                 </p>
                 <button
                   type="button"
@@ -273,6 +277,33 @@ const Home_automation = () => {
                 </button>
               </div>
             </div>
+
+            {/* Additional Section 5 */}
+<div data-aos="fade-down-left" data-aos-delay="200" className="flex flex-col overflow-hidden rounded-md shadow-lg lg:flex-row">
+  <img
+    src="https://bas-ip.com/wp-content/uploads/2023/05/smart-home-interface-with-augmented-realty-iot-object-interior-design.jpg" 
+    alt=""
+    className="h-80 rounded-xl dark:bg-gray-500 aspect-video"
+  />
+  <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
+    <span className="text-xs uppercase dark:text-gray-600">
+      Give it a try now!
+    </span>
+    <h3 className="text-3xl font-bold">Full Integration</h3>
+    <p className="my-6 dark:text-gray-600">
+    Bring your whole house into one easy-to-use system – lighting, HVAC,
+blinds, energy use/monitoring, AV, security, door entry. All at the touch of a button on the
+wall, your phone/tablet, or fully automated.
+    </p>
+    <button
+      type="button"
+      className="self-start px-6 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
+    >
+      Action
+    </button>
+  </div>
+</div>
+
           </div>
         )}
 
