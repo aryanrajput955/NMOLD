@@ -11,8 +11,10 @@ const Navbar = () => {
     <div>
       <nav className=" flex justify-center items-center w-full gap-32 pt-3">
         {/* left side */}
+<Link to={"/"}>
+     <img src="./logo.png" className="h-16 w-auto max-w-full sm:h-10 md:h-12 lg:h-14 xl:h-16"></img>
+</Link>
 
-        <div className=" text-2xl font-body  font-light">NMOLD</div>
 
         {/* middle part */}
         <ul className=" text-lg flex ml-36 gap-20 font-jost ">
@@ -165,9 +167,11 @@ const Navbar = () => {
           Industrial Automation
         </p>
         </Link>
+        <Link to={"/home-automation"}>
         <p className="cursor-pointer px-5 py-3 transition-all duration-300 ease-linear hover:bg-[#0088fe]">
           Home Automation
         </p>
+        </Link>
       </div>
       {/* Consulting Dropdown */}
       <div

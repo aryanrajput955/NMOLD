@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom';
 const Home_automation = () => {
 
   const [showMore, setShowMore] = useState(false);
@@ -113,12 +113,14 @@ const Home_automation = () => {
 the bed to make sure all the lights are off. Light up your environment the way that works for
 you, from changing colors ,color temperature to dimming and daytime autocontrol.
             </p>
+            <Link to={"/lighting-automation"}>
             <button
               type="button"
               className="self-start px-6 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
-            >
-              Action
+              >
+              See more
             </button>
+              </Link>
           </div>
         </div>
 
@@ -142,7 +144,7 @@ you, from changing colors ,color temperature to dimming and daytime autocontrol.
               type="button"
               className="self-start px-6 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
             >
-              Action
+              See more
             </button>
           </div>
         </div>
@@ -169,7 +171,7 @@ your HVAC system while saving energy.
               type="button"
               className="self-start px-6 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
             >
-              Action
+              See more
             </button>
           </div>
         </div>
@@ -197,7 +199,7 @@ your HVAC system while saving energy.
                   type="button"
                   className="self-start px-6 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
                 >
-                  Action
+                  See more
                 </button>
               </div>
             </div>
@@ -223,7 +225,7 @@ surveillance and much more for a secure home and building.
                   type="button"
                   className="self-start px-6 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
                 >
-                  Action
+                  See more
                 </button>
               </div>
             </div>
@@ -248,7 +250,7 @@ surveillance and much more for a secure home and building.
                   type="button"
                   className="self-start px-6 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
                 >
-                  Action
+                  See more
                 </button>
               </div>
             </div>
@@ -273,7 +275,7 @@ surveillance and much more for a secure home and building.
                   type="button"
                   className="self-start px-6 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
                 >
-                  Action
+                  See more
                 </button>
               </div>
             </div>
@@ -299,7 +301,7 @@ wall, your phone/tablet, or fully automated.
       type="button"
       className="self-start px-6 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow-lg hover:bg-blue-700 hover:scale-105 transition-transform duration-300"
     >
-      Action
+      See more
     </button>
   </div>
 </div>
