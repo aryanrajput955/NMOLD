@@ -5,7 +5,9 @@ export default withMT({
   theme: {
     fontFamily:{
       jost:["Jost"],
-      josefin:["Josefin Sans","sans-serif"]
+      josefin:["Josefin Sans","sans-serif"],
+      spicy:["Spicy Rice"],
+      Dm:["DM Serif Display"]
     },
     extend: {
       animation: {

@@ -6,12 +6,12 @@ const Projects = () => {
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-36 pb-12 items-center lg:items-start">
         {/* Images Section */}
         <div className="flex gap-5 justify-center lg:ml-52">
-          <img
+          <img data-aos="fade-down"
             className="h-[300px] w-[150px] lg:h-[500px] lg:w-[250px] rounded-[50px] lg:rounded-[70px]"
             src="./lg1.png"
             alt=""
           />
-          <img
+          <img data-aos="fade-up" data-aos-delay="150"
             className="h-[300px] w-[150px] lg:h-[500px] lg:w-[250px] rounded-[50px] lg:rounded-[70px]"
             src="./lg2.png"
             alt=""
@@ -19,7 +19,7 @@ const Projects = () => {
         </div>
 
         {/* Text Content Section */}
-        <div className="text-center lg:text-left px-6 lg:px-0">
+        <div  data-aos="fade-right" data-aos-delay="100" className="text-center lg:text-left px-6 lg:px-0">
           <h4 className="font-jost font-semibold text-2xl lg:text-4xl">
             Check Our Projects
           </h4>

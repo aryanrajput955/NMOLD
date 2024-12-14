@@ -4,17 +4,17 @@ const Services = () => {
   return (
     <>
       <div className="text-center">
-        <h1 className="pt-14 font-semibold font-josefin text-2xl md:text-4xl">
+        <h1 data-aos-once="true" data-aos="zoom-in" className="pt-14 font-semibold font-josefin text-2xl md:text-4xl">
           What Brings You Here
         </h1>
-        <h2 className="font-jost text-lg md:text-2xl mb-10 pt-4 px-4 md:px-0">
+        <h2 data-aos-once="true"  data-aos="zoom-in"  data-aos-delay="50" className="font-jost text-lg md:text-2xl mb-10 pt-4 px-4 md:px-0">
           We are a group of like-minded people working towards a common goal
           "Better Future".
         </h2>
       </div>
       <div className="flex flex-wrap justify-center gap-6 px-4 md:px-12 pb-28">
         {/* Automation Service */}
-        <div className="flex flex-col bg-[#1F1F1F] shadow-sm border border-slate-200 rounded-3xl w-full md:w-[550px]">
+        <div data-aos="fade-right" className="flex flex-col bg-[#1F1F1F] shadow-sm border border-slate-200 rounded-3xl w-full md:w-[550px]">
           <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-xl">
             <img
               src="./auto.png"
@@ -57,7 +57,7 @@ const Services = () => {
         </div>
 
         {/* Consultation Service */}
-        <div className="flex flex-col bg-[#1F1F1F] shadow-sm border border-slate-200 rounded-3xl w-full md:w-[550px]">
+        <div data-aos="fade-left"  className="flex flex-col bg-[#1F1F1F] shadow-sm border border-slate-200 rounded-3xl w-full md:w-[550px]">
           <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-xl">
             <img
               src="./consultation.png"
@@ -100,7 +100,7 @@ const Services = () => {
         </div>
 
 
-        <div className="flex flex-col bg-[#1F1F1F] shadow-sm border border-slate-200 rounded-3xl w-full md:w-[550px]">
+        <div data-aos="fade-right"  className="flex flex-col bg-[#1F1F1F] shadow-sm border border-slate-200 rounded-3xl w-full md:w-[550px]">
           <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-xl">
             <img
               src="./eng.png"
@@ -140,7 +140,7 @@ const Services = () => {
           </div>
         </div> 
 
-        <div className="flex flex-col bg-[#1F1F1F] shadow-sm border border-slate-200 rounded-3xl w-full md:w-[550px]">
+        <div data-aos="fade-left"  className="flex flex-col bg-[#1F1F1F] shadow-sm border border-slate-200 rounded-3xl w-full md:w-[550px]">
           <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-xl">
             <img
               src="./light.png"

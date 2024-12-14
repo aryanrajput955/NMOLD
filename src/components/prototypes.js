@@ -13,7 +13,7 @@ const Prototypes = () => {
       {/* Cards Section */}
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-12 lg:gap-32 justify-center items-center">
         {/* Assembly Specialists Card */}
-        <div className="w-60 text-center">
+        <div data-aos-delay="50"  data-aos="fade-right" className="w-60 text-center">
           <img className="mx-auto h-24 w-24 sm:h-28 sm:w-28 lg:h-36 lg:w-36 mb-4" src="./cert.png" alt="Assembly Specialists" />
           <h5 className="font-jost text-white mb-2 text-base sm:text-lg font-semibold"> 
             Assembly Specialists
@@ -24,7 +24,7 @@ const Prototypes = () => {
         </div>
 
         {/* Quick-Turn Prototypes Card */}
-        <div className="w-60 text-center">
+        <div data-aos-delay="150" data-aos="fade-right" className="w-60 text-center">
           <img className="mx-auto h-24 w-24 sm:h-28 sm:w-28 lg:h-36 lg:w-36 mb-4" src="./quick.png" alt="Quick-Turn Prototypes" />
           <h5 className="font-jost text-white mb-2 text-base sm:text-lg font-semibold"> 
             Quick-Turn Prototypes
@@ -35,7 +35,7 @@ const Prototypes = () => {
         </div>
 
         {/* On-Demand Manufacturing Card */}
-        <div className="w-60 text-center">
+        <div data-aos-delay="250" data-aos="fade-right" className="w-60 text-center">
           <img className="mx-auto h-24 w-24 sm:h-28 sm:w-28 lg:h-36 lg:w-36 mb-4" src="./box.png" alt="On-Demand Manufacturing" />
           <h5 className="font-jost text-white mb-2 text-base sm:text-lg font-semibold"> 
             On-Demand Manufacturing

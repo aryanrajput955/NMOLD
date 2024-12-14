@@ -16,7 +16,7 @@ const Hero = () => {
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-              delay: 2500,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             pagination={{
@@ -26,18 +26,20 @@ const Hero = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <div className=" flex ">
-              <div className="lg:w-1/2 w-full bg-gray-900 relative flex flex-col items-start p-6 sm:p-8 lg:p-10">
+              <div className="  flex ">
+              <div data-aos="fade-right" className=" lg:w-1/2 w-full bg-gray-900 relative flex flex-col items-start p-6 sm:p-8  lg:pt-40">
               <div className="hidden lg:block absolute top-10 right-0 w-10 h-20 md:w-14 md:h-28 lg:w-16 lg:h-32 rounded-tl-full rounded-bl-full bg-neutral-600 z-0"></div>
               <div className="flex items-start w-full">
-            <h1 className="text-white font-light  text-4xl sm:text-5xl md:text-7xl lg:text-9xl mb-5">
+            <h1 className="text-white font-light font-Dm  text-4xl sm:text-5xl md:text-7xl lg:text-8xl mb-5">
               NMOLD
             </h1>
           </div>
           <h2 className="text-white text-lg sm:text-xl md:text-2xl lg:text-4xl font-jost">
+          <i>
             Bringing Ideas To Life
+            </i> 
           </h2>
-          <p className="text-white font-jost font-light text-xs sm:text-sm md:text-base lg:text-lg mt-4 w-full md:w-[90%] lg:w-[500px]">
+          <p className="text-white font-jost  text-xs sm:text-sm md:text-base lg:text-lg mt-4 w-full md:w-[90%] lg:w-[500px]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
             commodi ad porro quo. Dolorem illum, modi, maiores aperiam tenetur
             odio voluptatum fugiat magni impedit, error voluptas recusandae.
@@ -53,10 +55,10 @@ const Hero = () => {
           <div className="hidden lg:block absolute bottom-3 left-0 w-10 h-20 md:w-14 md:h-28 lg:w-16 lg:h-32 rounded-tr-full rounded-br-full bg-gray-600"></div>
           <div className="hidden lg:block absolute bottom-20 rotate-180  right-0 w-10 h-20 md:w-14 md:h-28 lg:w-16 lg:h-32 rounded-tr-full rounded-br-full bg-gray-600"></div>
               </div>
-              <div className=" w-1/2">
+              <div data-aos="fade-left" className=" w-1/2">
               <img
                 className="h-screen w-full object-cover"
-                src="./image2.png"
+                src="./new.jpg"
                 alt="Slide 1"
                 />
               </div>
