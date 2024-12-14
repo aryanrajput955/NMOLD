@@ -17,14 +17,13 @@ import Industrial_automation from "./pages/industrial_automation";
 import Automation from "./pages/Automation";
 import Home_automation from "./pages/home_automation";
 import Lighting_automation from "./pages/automation/lighting_automation";
-
+import { useEffect } from "react";
 AOS.init();
 
 
 
 
 const App = () => {
-
   const router = createBrowserRouter([
     {
       path: '/',
@@ -74,15 +73,21 @@ const App = () => {
       path:"/lighting-automation",
       element:<><Navbar/><Lighting_automation/></>
     }
-  ])
+  ]);
+  
+  useEffect(() => {
+    const unsubscribe = router.subscribe(({ location }) => {
+      window.scrollTo(0, 0);
+    });
+
+    // Cleanup subscription on unmount
+    return () => unsubscribe();
+  }, [router]);
 
   return (
     <>
-    
-   
-
       <RouterProvider router={router} />
-      <Footer/> 
+      <Footer />
     </>
   );
 };

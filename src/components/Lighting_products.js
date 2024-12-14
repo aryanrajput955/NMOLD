@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const Lighting_products = ({img_url , text}) => {
+	
 	return (
 		<div data-aos="fade-left"  className='cursor-pointer flex flex-col items-center'>
 			<Link to={"/lighting-products"} >
