@@ -18,7 +18,7 @@ const Dynamic_Products = () => {
 
 	useEffect(() => {
 		axios
-			.get('http://localhost:8080/product-info')
+			.get('https://nmold-e8fb.vercel.app/product-info')
 			.then((response) => {
 				setProductPage(response.data)
 				const prod = response.data.find((product) => {
